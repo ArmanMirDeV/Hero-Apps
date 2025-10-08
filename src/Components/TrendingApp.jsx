@@ -5,7 +5,7 @@ import { NavLink } from 'react-router';
 
 const TrendingApp = () => {
 
-    const { appData, loading, error } = useAppDetails()
+    const { appData } = useAppDetails()
     console.log(appData);
 
     const featuredAppsData = appData.slice(0, 8)
