@@ -4,16 +4,17 @@ import Footer from '../Components/Footer';
 import { Outlet } from 'react-router';
 
 const MainLayout = () => {
-    return (
-       <div>
-         <Navbar />
+  return (
+    <div>
+      <Navbar />
 
-        <Outlet />
+      <div className=' max-w-screen-xl mx-auto w-full px-4  md:px-8 lg:px-12 py-4  md:py-8 lg:py-12 flex-1' ></div>
+      <Outlet />
 
-        <Footer></Footer>
-        
-       </div>
-    );
+      <Footer></Footer>
+
+    </div>
+  );
 };
 
 export default MainLayout;

@@ -1,38 +1,46 @@
 import React from 'react';
-import useAppDetails from '../Hooks/useAppDetails';
+import AppCard from './AppCard';
+import useAppDetails from '../Hooks/useAppDetails.js'
 import { NavLink } from 'react-router';
-import AppCard from '../Components/AppCard';
 
-const Apps = () => {
+const TrendingApp = () => {
 
-    const { appData } = useAppDetails()
+    const { appData, loading, error } = useAppDetails()
     console.log(appData);
 
+    const featuredAppsData = appData.slice(0, 8)
+
     return (
-         <div className='flex justify-center'>
+        <div className='flex justify-center'>
             <div className="bg-gray-50 min-h-screen py-10 px-4 md:px-12">
             {/* Header */}
             <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                    Our All Applications 
+                    Trending Apps
                 </h2>
                 <p className="text-gray-500 mt-2">
-                   Explore All Apps on the Market developed by us. We code for Millions 
+                    Explore All Trending Apps on the Market developed by us
                 </p>
             </div>
 
-            <p className=' font-bold text-2xl p-2 mb-3'>({appData.length}) Apps Found</p>
             {/* Grid of Apps */}
             <div className="grid grid-cols-1 items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
                 {
-                    appData.map(appData => (
+                    featuredAppsData.map(appData => (
                         <AppCard key={appData.id} appData={appData} />
                     ))
                 }
+            </div>
+
+            {/* Show All Button */}
+            <div className="text-center mt-10">
+                <NavLink to='/apps' className="bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white   px-6 py-2 rounded  transition">
+                    Show All
+                </NavLink>
             </div>
         </div>
         </div>
     );
 };
 
-export default Apps;
+export default TrendingApp;

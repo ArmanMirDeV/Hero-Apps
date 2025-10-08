@@ -25,14 +25,14 @@ const HeroSection = () => {
           
             <div className="flex justify-center gap-4 mb-16 ">
                 <a target='_blank' href="https://play.google.com/store/games?hl=en">
-                    <button className="flex items-center gap-2 bg-white border px-5 py-2 rounded-lg shadow-sm hover:shadow-md transition hover:bg-pink-200 cursor-pointer">
+                    <button className="flex items-center gap-2 bg-white border border-pink-800 px-5 py-2 rounded-lg shadow-sm hover:shadow-md transition hover:bg-pink-200 cursor-pointer">
                     <FaGooglePlay className="text-green-500 text-xl" />
                     <span className="font-medium">Google Play</span>
                 </button>
                 </a>
 
                 <a target='_blank' href="https://www.apple.com/app-store/">
-                    <button className="flex items-center gap-2 bg-white border px-5 py-2 rounded-lg shadow-sm hover:shadow-md transition hover:bg-pink-200 cursor-pointer">
+                    <button className="flex items-center gap-2 bg-white border border-pink-800 px-5 py-2 rounded-lg shadow-sm hover:shadow-md transition hover:bg-pink-200 cursor-pointer">
                     <FaApple className="text-black text-xl" />
                     <span className="font-medium">App Store</span>
                 </button>
