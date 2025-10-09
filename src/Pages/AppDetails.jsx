@@ -4,14 +4,15 @@ import ratingIcon from '../assets/icon-ratings.png'
 import reviewIcon from '../assets/icon-review.png'
 import { useParams } from 'react-router';
 import useAppDetails from '../Hooks/useAppDetails';
-import ChartData from '../Components/ChartData';
 import Loading from '../Components/Loading';
+import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const AppDetails = () => {
 
     const { id } = useParams()
     const { appData, loading } = useAppDetails();
     const singleAppData = appData.find(p => (p.id) === Number(id))
+
 
     const [isInstalled, setIsInstalled] = useState(false);
 
@@ -86,9 +87,33 @@ const AppDetails = () => {
 
             </div>
 
-            <div>
-                <ChartData />
+           <div className='space-y-3' >
+            <h3 className='text-xl font-semibold'>Apps Review Chart</h3>
+            <div className='bg-base-100 border rounded-xl p-4 h-80' >
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                        width={500}
+                        height={300}
+                        data={singleAppData.ratings}
+                        margin={{
+                            top: 5,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey='name' />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="count" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
+                        <Bar dataKey="uv" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+                    </BarChart>
+                </ResponsiveContainer>
+
             </div>
+        </div>
             <div>
                 <h2 className='text-3xl font-semibold text-purple-800' >Description</h2>
                 <p>{description}</p>
