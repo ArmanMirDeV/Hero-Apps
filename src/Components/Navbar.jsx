@@ -6,7 +6,18 @@ import { FaHome } from "react-icons/fa";
 import { FaAppStoreIos } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
 
+
+
+
+
+
 const Navbar = () => {
+
+
+    const linkClasses = ({isActive}) => isActive
+    ?"text-purple-600 border-b-2 border-purple-600 pb-1"
+    : "text-gray-600 hover:text-purple-600";
+
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -37,14 +48,14 @@ const Navbar = () => {
             <div className='navbar-center' >
                 <ul className="menu menu-horizontal px-1 hidden lg:flex text-xl font-semibold text-purple-800">
                     <li>
-                        <NavLink to="/"> <FaHome />
+                        <NavLink className={linkClasses} to="/"> <FaHome />
                             Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/apps"><FaAppStoreIos /> Apps</NavLink>
+                        <NavLink className={linkClasses} to="/apps"><FaAppStoreIos /> Apps</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/installation"> <FaDownload /> Installation</NavLink>
+                        <NavLink className={linkClasses} to="/installation"> <FaDownload /> Installation</NavLink>
                     </li>
 
                 </ul>

@@ -20,7 +20,7 @@ const Apps = () => {
             <div className="bg-gray-50 min-h-screen py-10 px-4 md:px-12">
                 {/* Header */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-mono text-purple-700">
+                    <h2 className="text-3xl md:text-4xl font-bold  font-mono text-purple-700">
                         Our All Applications
                     </h2>
 
