@@ -1,5 +1,6 @@
 import React from 'react';
 import errorImg from '../assets/error-404.png'
+import { NavLink } from 'react-router';
 
 const Error404 = () => {
     return (
@@ -14,7 +15,7 @@ const Error404 = () => {
 
   
             <h1 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
-                Oops, page not found!
+                OPPS, PAGE NOT FOUND!
             </h1>
 
   
@@ -23,11 +24,18 @@ const Error404 = () => {
             </p>
 
 
-            <button
+           <div className=' flex gap-8'>
+             <NavLink to='../'
                 className="bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-500 text-white px-6 py-2 rounded-md text-sm transition cursor-pointer"
             >
                 Go Back!
-            </button>
+            </ NavLink>
+            <NavLink to='/apps'
+                className="bg-gradient-to-r from-purple-500 via-purple-600 to-indigo-500 text-white px-6 py-2 rounded-md text-sm transition cursor-pointer"
+            >
+               All Apps
+            </ NavLink>
+           </div>
         </div>
     );
 };

@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from '../assets/logo.png'
 import githubIcon from '../assets/github.png'
+import { FaHome } from "react-icons/fa";
+import { FaAppStoreIos } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
     return (
@@ -32,15 +35,16 @@ const Navbar = () => {
 
             </div>
             <div className='navbar-center' >
-                <ul className="menu menu-horizontal px-1 hidden lg:flex text-xl font-semibold">
+                <ul className="menu menu-horizontal px-1 hidden lg:flex text-xl font-semibold text-purple-800">
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/"> <FaHome />
+                            Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/apps">Apps</NavLink>
+                        <NavLink to="/apps"><FaAppStoreIos /> Apps</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/installation">Installation</NavLink>
+                        <NavLink to="/installation"> <FaDownload /> Installation</NavLink>
                     </li>
 
                 </ul>

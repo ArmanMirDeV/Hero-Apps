@@ -12,7 +12,7 @@ const HeroSection = () => {
                 <span className="bg-gradient-to-r from-indigo-500 via-pink-400 to-purple-500 bg-clip-text text-transparent">
                     Productive
                 </span>
-                <span> Apps</span>
+                <span className='text-purple-900' > Apps</span>
             </h1>
 
             {/* Subtext */}
