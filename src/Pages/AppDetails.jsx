@@ -33,13 +33,10 @@ const AppDetails = () => {
     const handleInstallNow = () => {
         const existingApp = JSON.parse(localStorage.getItem('app')) || [];
 
-        const isDuplicate = existingApp.some(app => app.id === singleAppData.id);
+        
 
 
-        if (isDuplicate) {
-            alert("Already installed.");
-            return;
-        }
+        
 
         const updatedApp = [...existingApp, singleAppData];
         localStorage.setItem('app', JSON.stringify(updatedApp));
