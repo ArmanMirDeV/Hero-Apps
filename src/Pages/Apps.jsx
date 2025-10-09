@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useAppDetails from '../Hooks/useAppDetails';
-import { Link } from 'react-router'; // Fixed unused NavLink
+import { Link } from 'react-router';
 import AppCard from '../Components/AppCard';
 import ErrorApp from './ErrorApp';
 import Loading from '../Components/Loading';
@@ -23,7 +23,7 @@ const Apps = () => {
         setSearching(true);
         const timer = setTimeout(() => {
             setSearching(false);
-        }, 400); // Delay in ms (adjust as needed)
+        }, 400); 
 
         return () => clearTimeout(timer);
     }, [search]);
@@ -32,20 +32,21 @@ const Apps = () => {
         ? appData.filter(app => app.title.toLowerCase().includes(term))
         : appData;
 
-    // Show loading if data is still being fetched
+  
     if (loading) return <Loading />;
 
-    // Show loading while searching
+   
     if (searching) return <Loading />;
 
     return (
         <div className='flex justify-center'>
             <div className="bg-gray-50 min-h-screen py-10 px-4 md:px-12">
-                {/* Header */}
+              
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-bold font-mono text-purple-700">
+                    <h2 className="text-3xl md:text-5xl font-bold font-mono text-purple-700">
                         Our All Applications
                     </h2>
+                    <p className='mt-2 text-xl'>Explore All Apps on the Market developed by us. We code for Millions</p>
                 </div>
 
                 <div className='flex justify-between'>
