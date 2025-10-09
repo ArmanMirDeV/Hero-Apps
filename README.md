@@ -1,16 +1,46 @@
-# React + Vite
+# appora.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+**appora.io** is a modern, responsive web application designed to deliver high-performance user experiences. Built with scalability, speed, and user-friendliness in mind, appora.io leverages cutting-edge front-end technologies and development best practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Whether you're launching a SaaS product, a dashboard, or a landing page, appora.io provides a solid foundation for rapid development and deployment.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack & Tools Used
 
-## Expanding the ESLint configuration
+### Frontend
+- **React.js** – Component-based JavaScript library for building user interfaces
+- **Tailwind CSS** – Utility-first CSS framework for rapid UI development
+- **HTML5** – Semantic markup for structure and accessibility
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+### State Management
+- **React Context API** – Built-in solution for managing global state
+
+
+### Routing
+- **React Router** – Declarative routing for single-page applications
+
+### API & Data Handling
+- **Axios** – Promise-based HTTP client for API requests
+
+
+
+
+### Form Handling & Validation
+- **React Hook Form** – Performant and flexible form management
+
+
+
+### Version Control & CI/CD
+- **Git & GitHub** – Source control and collaboration
+- **GitHub Actions** – Continuous integration and deployment
+
+### Deployment
+ **Netlify** – Fast and reliable hosting for frontend apps
+
+
+
+
