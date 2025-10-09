@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useAppDetails from '../Hooks/useAppDetails';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import AppCard from '../Components/AppCard';
 import ErrorApp from './ErrorApp'
 
@@ -43,7 +43,7 @@ const Apps = () => {
                         <div className="grid grid-cols-1 items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
                     {
                         searchedApp.map(appData => (
-                            <AppCard key={appData.id} appData={appData} />
+                            <Link key={appData.id} to={`/apps/avc`} ><AppCard  appData={appData} /></Link>
                         ))
                     }
                 </div>

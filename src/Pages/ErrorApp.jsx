@@ -1,8 +1,10 @@
 import React from 'react';
 import errorImg from '../assets/App-Error.png'
 import { NavLink } from 'react-router';
+import Apps from './Apps';
 
 const ErrorApp = () => {
+    
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 text-center">
