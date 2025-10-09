@@ -59,7 +59,8 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className="card-actions ">
-                        <button onClick={handleInstallNow} className="btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white ">Install Now <span>({size} MB)</span></button>
+                        <button 
+                         onClick={handleInstallNow} className="btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white ">Install Now <span>({size} MB)</span></button>
                     </div>
                 </div>
 
