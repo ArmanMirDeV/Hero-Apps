@@ -1,11 +1,88 @@
-import React from 'react';
-import AppDetails from './AppDetails';
+import React, { useEffect, useState } from 'react';
+import ratingIcon from '../assets/icon-ratings.png'
+import downloadIcon from '../assets/icon-downloads.png'
+
 
 const Installation = () => {
+
+
+    const [apps, setApps] = useState([]);
+    useEffect(() => {
+        const savedApp = JSON.parse(localStorage.getItem('app'));
+
+        if (savedApp) setApps(savedApp)
+    }, [])
+
+
+
+
+
+    ;
+
     return (
         <div>
-            <AppDetails />
-            <h3>This is installation</h3>
+            <div className="min-h-screen bg-gray-50 p-8">
+                <div className=" mx-auto bg-white p-6 rounded-lg shadow-md">
+                    {/* Header */}
+                    <h1 className="text-4xl text-purple-700 font-mono font-semibold text-center mb-1">Your Installed Apps</h1>
+                    <p className="text-center text-gray-500 mb-6 text-lg">
+                        Explore All Trending Apps on the Market developed by us
+                    </p>
+
+                    {/* Top bar */}
+                    <div className="flex justify-between items-center mb-4 text-sm text-gray-600">
+                        <p>1 Apps Found</p>
+                        <div className="flex items-center space-x-2">
+                            <label htmlFor="sort" className="text-gray-500">Sort by</label>
+                            <select id="sort" className="border rounded px-2 py-1 text-sm">
+                                <option>Size</option>
+                                <option>Name</option>
+                                <option>Rating</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    {/* App List */}
+                    <div className="space-y-4">
+                        {apps.map((app, index) => (
+                            <div
+                                key={index}
+                                className="flex items-center justify-between p-4 bg-gray-100 rounded-md shadow-sm"
+                            >
+                                {/* Left side - App Info */}
+                                <div className="flex items-center space-x-4">
+                                    {/* Placeholder image */}
+                                    <div className="w-12 h-12 ">
+                                        <img className='rounded-2xl' src={app.image} alt={app.title} />
+                                    </div>
+                                    {/* App Details */}
+                                    <div>
+                                        <p className="font-medium text-purple-800 font-mono text-xl">{app.title}</p>
+                                        <div className="text-sm text-gray-500 flex space-x-9 mt-1">
+                                            <span className='flex gap-2' >
+                                                <img className='h-4 w-4' src={downloadIcon} alt="" /> {app.downloads}</span>
+
+                                            <span className='flex gap-2'>
+                                                <img className='h-4 w-4' src={ratingIcon} alt="" /> 
+                                                {app.ratingAvg}
+                                                </span>
+
+
+                                            <span>{app.size} MB</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Uninstall button */}
+                                <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded">
+                                    Uninstall
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

@@ -7,6 +7,8 @@ import ErrorApp from './ErrorApp'
 const Apps = () => {
 
     const { appData } = useAppDetails()
+    
+    
 
     const [search, setSearch] = useState('');
     const term = search.trim().toLowerCase()
@@ -18,7 +20,7 @@ const Apps = () => {
             <div className="bg-gray-50 min-h-screen py-10 px-4 md:px-12">
                 {/* Header */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-mono text-purple-700">
                         Our All Applications
                     </h2>
 
@@ -43,7 +45,7 @@ const Apps = () => {
                         <div className="grid grid-cols-1 items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
                     {
                         searchedApp.map(appData => (
-                            <Link key={appData.id} to={`/apps/avc`} ><AppCard  appData={appData} /></Link>
+                            <Link key={appData.id} to={`/apps/${appData.id}`} ><AppCard  appData={appData} /></Link>
                         ))
                     }
                 </div>

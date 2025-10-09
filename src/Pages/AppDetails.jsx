@@ -2,34 +2,82 @@ import React from 'react';
 import downloadIcon from '../assets/icon-downloads.png'
 import ratingIcon from '../assets/icon-ratings.png'
 import reviewIcon from '../assets/icon-review.png'
+import { useParams } from 'react-router';
+import useAppDetails from '../Hooks/useAppDetails';
 
 const AppDetails = () => {
+
+    const { id } = useParams()
+    const { appData, loading, error } = useAppDetails();
+    const singleAppData = appData.find(p => (p.id) === Number(id))
+
+
+    if (loading) return <p>Loading....</p>
+
+    const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleAppData || {}
+
+
+
+    const handleInstallNow = () => {
+        const existingApp = JSON.parse(localStorage.getItem('app'))
+
+        let updatedApp = [];
+
+        if (existingApp) {
+            const isDuplicate = existingApp.some( app => app.id === singleAppData.id )
+            // if er moddhe ekhane button disable add korte hobe
+            if(isDuplicate) return (alert("sorry bahe") )
+            updatedApp = [...existingApp, singleAppData];
+        }
+        else {
+            updatedApp.push(singleAppData)
+        }
+
+        localStorage.setItem('app', JSON.stringify(updatedApp))
+    }
+
     return (
-        <div className="card card-side bg-base-100 shadow-sm">
-            <figure>
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                    alt="Movie" />
-            </figure>
-            <div className="card-body">
-                <h2 className="card-title">SmPlan:ToDo List with Reminder</h2>
-                <p>Developed by <span className='text-purple-600'>productive.io</span></p>
-                <div className='flex gap-8'>
-                    <div>
-                        <img src={downloadIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Downloads</p> <p className='font-extrabold text-2xl' > 8M </p>
+        <div className='card card-body' >
+            <div className="card card-side bg-base-100 shadow-sm">
+                <figure className='h-84 overflow-hidden' >
+                    <img className='w-full object-cover'
+                        src={image}
+                        alt={title} />
+                </figure>
+                <div className="card-body">
+                    <h2 className="card-title font-bold text-3xl">{title}</h2>
+                    <p className='text-xl font-mono' >Developed by <span className='text-purple-600'>{companyName}</span></p>
+                    <div className='flex gap-8'>
+                        <div>
+                            <img src={downloadIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Downloads</p> <p className='font-extrabold text-2xl' > {downloads} </p>
+                        </div>
+                        <div>
+                            <img src={ratingIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Average Ratings</p> <p className='font-extrabold text-2xl' > {ratingAvg} </p>
+                        </div>
+                        <div>
+                            <img src={reviewIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Total Reviews</p> <p className='font-extrabold text-2xl' > {reviews} </p>
+                        </div>
                     </div>
-                    <div>
-                        <img src={ratingIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Average Ratings</p> <p className='font-extrabold text-2xl' > 4.9 </p>
-                    </div>
-                    <div>
-                        <img src={reviewIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Total Reviews</p> <p className='font-extrabold text-2xl' > 54K </p>
+                    <div className="card-actions ">
+                        <button onClick={handleInstallNow} className="btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white ">Install Now <span>({size} MB)</span></button>
                     </div>
                 </div>
-                <div className="card-actions">
-                    <button className="btn bg-[#00d390]">Install Now <span>(201 MB)</span></button>
-                </div>
+
+
+
+
             </div>
+
+            <div>
+                <h2 className='text-5xl'>REcharts</h2>
+            </div>
+            <div>
+                <h2 className='text-3xl font-semibold text-purple-800' >Description</h2>
+                <p>{description}</p>
+            </div>
+
         </div>
+
     );
 };
 
