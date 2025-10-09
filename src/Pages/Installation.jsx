@@ -3,7 +3,7 @@ import ratingIcon from '../assets/icon-ratings.png'
 import downloadIcon from '../assets/icon-downloads.png'
 import useAppDetails from '../Hooks/useAppDetails';
 import Loading from '../Components/Loading';
-
+ import { ToastContainer, toast } from 'react-toastify';
 
 const Installation = () => {
 
@@ -45,6 +45,8 @@ const {  loading } = useAppDetails();
         setApps(updatedApp)
 
         localStorage.setItem('app', JSON.stringify(updatedApp))
+
+        toast("Uninstalled")
     }
 
     if (loading) return <Loading />
@@ -119,6 +121,7 @@ const {  loading } = useAppDetails();
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
