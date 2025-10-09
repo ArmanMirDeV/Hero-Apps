@@ -4,6 +4,8 @@ import ratingIcon from '../assets/icon-ratings.png'
 import reviewIcon from '../assets/icon-review.png'
 import { useParams } from 'react-router';
 import useAppDetails from '../Hooks/useAppDetails';
+import ChartData from '../Components/ChartData';
+import Loading from '../Components/Loading';
 
 const AppDetails = () => {
 
@@ -12,7 +14,7 @@ const AppDetails = () => {
     const singleAppData = appData.find(p => (p.id) === Number(id))
 
 
-    if (loading) return <p>Loading....</p>
+    if (loading) return <Loading />
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleAppData || {}
 
@@ -70,7 +72,7 @@ const AppDetails = () => {
             </div>
 
             <div>
-                <h2 className='text-5xl'>REcharts</h2>
+                <ChartData />
             </div>
             <div>
                 <h2 className='text-3xl font-semibold text-purple-800' >Description</h2>

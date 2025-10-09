@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import ratingIcon from '../assets/icon-ratings.png'
 import downloadIcon from '../assets/icon-downloads.png'
+import useAppDetails from '../Hooks/useAppDetails';
+import Loading from '../Components/Loading';
 
 
 const Installation = () => {
 
+    
+const {  loading } = useAppDetails();
 
     const [apps, setApps] = useState([]);
 
@@ -42,6 +46,8 @@ const Installation = () => {
 
         localStorage.setItem('app', JSON.stringify(updatedApp))
     }
+
+    if (loading) return <Loading />
 
 
     return (
