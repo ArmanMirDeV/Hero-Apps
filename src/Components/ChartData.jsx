@@ -10,7 +10,7 @@ const ChartData = () => {
     const { appData } = useAppDetails();
     // const { ratings } = appData;
 
-    console.log(appData.ratings)
+    console.log(appData)
 
     return (
         <div className='space-y-3' >

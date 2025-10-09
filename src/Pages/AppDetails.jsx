@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import downloadIcon from '../assets/icon-downloads.png'
 import ratingIcon from '../assets/icon-ratings.png'
 import reviewIcon from '../assets/icon-review.png'
@@ -10,33 +10,39 @@ import Loading from '../Components/Loading';
 const AppDetails = () => {
 
     const { id } = useParams()
-    const { appData, loading, error } = useAppDetails();
+    const { appData, loading } = useAppDetails();
     const singleAppData = appData.find(p => (p.id) === Number(id))
+
+    const [isInstalled, setIsInstalled] = useState(false);
+
+    useEffect(() => {
+        const existingApp = JSON.parse(localStorage.getItem('app')) || [];
+        const installed = existingApp.some(app => app.id === Number(id));
+        setIsInstalled(installed);
+    }, [id]);
 
 
     if (loading) return <Loading />
 
-    const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = singleAppData || {}
+    const { image, title, companyName, description, size, reviews, ratingAvg, downloads } = singleAppData || {}
 
 
 
     const handleInstallNow = () => {
-        const existingApp = JSON.parse(localStorage.getItem('app'))
+        const existingApp = JSON.parse(localStorage.getItem('app')) || [];
 
-        let updatedApp = [];
+        const isDuplicate = existingApp.some(app => app.id === singleAppData.id);
 
-        if (existingApp) {
-            const isDuplicate = existingApp.some( app => app.id === singleAppData.id )
-            // if er moddhe ekhane button disable add korte hobe
-            if(isDuplicate) return (alert("sorry bahe") )
-            updatedApp = [...existingApp, singleAppData];
-        }
-        else {
-            updatedApp.push(singleAppData)
+
+        if (isDuplicate) {
+            alert("Already installed.");
+            return;
         }
 
-        localStorage.setItem('app', JSON.stringify(updatedApp))
-    }
+        const updatedApp = [...existingApp, singleAppData];
+        localStorage.setItem('app', JSON.stringify(updatedApp));
+        setIsInstalled(true);
+    };
 
     return (
         <div className='card card-body' >
@@ -61,8 +67,17 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className="card-actions ">
-                        <button 
-                         onClick={handleInstallNow} className="btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white ">Install Now <span>({size} MB)</span></button>
+                        <button
+                            onClick={handleInstallNow}
+                            className={`btn text-white ${isInstalled
+                                ? 'bg-green-500 cursor-not-allowed'
+                                : 'bg-gradient-to-r from-[#632ee3] to-[#9f62f2]'
+                                }`}
+                            disabled={isInstalled}
+                        >
+                            {isInstalled ? 'Installed' : 'Install Now'} <span>({size} MB)</span>
+                        </button>
+
                     </div>
                 </div>
 
