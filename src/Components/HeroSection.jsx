@@ -7,7 +7,7 @@ const HeroSection = () => {
     return (
         <section className="bg-gray-50 text-center pt-20 px-6 relative overflow-hidden">
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 flex-row">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 flex-row font-mono ">
                 <span>We Build </span> <br />
                 <span className="bg-gradient-to-r from-indigo-500 via-pink-400 to-purple-500 bg-clip-text text-transparent">
                     Productive

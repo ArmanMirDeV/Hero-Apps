@@ -11,7 +11,7 @@ const AppCard = ({appData}) => {
     return (
         <div className="card  bg-base-100  md:w-[317px] md:h-[404px]  shadow-2xl hover:scale-105 transition ease-in-out ">
             <figure className='mt-2 h-72 overflow-hidden rounded-3xl' >
-                <img className='p-4 w-full object-cover '
+                <img className='p-4 w-full object-cover  '
                     src={image}
                     alt="Album" />
             </figure>

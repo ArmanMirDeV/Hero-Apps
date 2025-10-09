@@ -91,7 +91,7 @@
     ]
   },
   {
-    "image": "https://i.ibb.co.com/pv65vW6Q/0a50c1516e434e0108649d2987cfaeb0.jpg",
+    "image": "https://i.ibb.co.com/jkGd53YP/596d74fed827cf406cbd2a4f0d8f00b2.jpg",
     "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
     "id": 6,
@@ -484,6 +484,278 @@
       { "name": "3 star", "count": 450000 },
       { "name": "4 star", "count": 1350000 },
       { "name": "5 star", "count": 2475000 }
+    ]
+  },
+
+  
+  {
+    "image": "https://i.ibb.co.com/5X2FhRVn/ab88cbf3eb85e63fecf31564326b138a.jpg",
+    "title": "Reddit",
+    "companyName": "Reddit, Inc.",
+    "id": 28,
+    "description": "Reddit, developed by Reddit, Inc., is a vast social news aggregation and discussion platform where millions of users engage in conversations across thousands of communities called subreddits. Founded in 2005, Reddit has become known as 'the front page of the internet,' offering content ranging from news and entertainment to niche hobbies and professional discussions.\n\nThe official Reddit app provides an intuitive interface for browsing posts, commenting, voting, and participating in discussions. Users can subscribe to their favorite subreddits, create posts with text, images, videos, or links, and engage with a diverse global community. The app supports features like custom feeds, live chat, awards, and personalized recommendations based on user interests.\n\nReddit is praised for its authentic user-generated content, active moderation, and the diversity of communities covering virtually every topic imaginable. The platform's voting system helps surface quality content while maintaining democratic community governance.\n\nWith an average rating of around 4.2 stars on major app stores, users appreciate Reddit's depth of content and community engagement, though some mention occasional bugs and interface complexity. The app has been downloaded over 100 million times globally, reflecting its position as a major social media platform.\n\nIn summary, Reddit is a dynamic community-driven platform that connects people through shared interests and meaningful discussions. Whether seeking advice, entertainment, or specialized knowledge, Reddit offers a unique social experience built on authentic user contributions.",
+    "size": 128,
+    "reviews": "892 K",
+    "ratingAvg": 4.2,
+    "downloads": "730 M",
+    "ratings": [
+      { "name": "1 star", "count": 445000 },
+      { "name": "2 star", "count": 623000 },
+      { "name": "3 star", "count": 1335000 },
+      { "name": "4 star", "count": 2670000 },
+      { "name": "5 star", "count": 3827000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LXfTXH55/e795cbd6128a394580c0fd7aea733398.jpg",
+    "title": "Twitch",
+    "companyName": "Twitch Interactive, Inc.",
+    "id": 29,
+    "description": "Twitch, owned by Amazon and developed by Twitch Interactive, Inc., is the world's leading live streaming platform primarily focused on gaming, esports, and creative content. Launched in 2011, Twitch has become the go-to destination for watching live gameplay, tournaments, music performances, and interactive streams from millions of content creators worldwide.\n\nThe official Twitch app offers seamless live streaming viewing with chat interaction, allowing users to engage with streamers and other viewers in real-time. Users can follow their favorite channels, subscribe for exclusive benefits, participate in raids, and support creators through bits and donations. The app supports mobile streaming, VOD playback, and personalized recommendations.\n\nTwitch is praised for its vibrant community culture, interactive features, and the accessibility it provides for both viewers and aspiring streamers. The platform has expanded beyond gaming to include categories like music, talk shows, cooking, and creative arts.\n\nWith an average rating of around 4.3 stars on major app stores, users value Twitch's community engagement and content variety, though some report occasional streaming quality issues. The app has been downloaded over 100 million times, cementing its position as the premier live streaming platform.\n\nIn summary, Twitch is an immersive live streaming platform that connects content creators with passionate audiences through real-time interaction and shared experiences.",
+    "size": 115,
+    "reviews": "758 K",
+    "ratingAvg": 4.3,
+    "downloads": "650 M",
+    "ratings": [
+      { "name": "1 star", "count": 303200 },
+      { "name": "2 star", "count": 454800 },
+      { "name": "3 star", "count": 1137000 },
+      { "name": "4 star", "count": 3411000 },
+      { "name": "5 star", "count": 6294000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/c7QWFvT/7080b24c3980c8f4d29412746b5c7ce9.jpg",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 30,
+    "description": "Airbnb, developed by Airbnb, Inc., is a revolutionary travel platform that connects travelers with unique accommodations and experiences around the world. Founded in 2008, Airbnb has transformed the hospitality industry by enabling homeowners to rent out their properties while giving travelers access to authentic local stays ranging from apartments and homes to treehouses and castles.\n\nThe official Airbnb app provides a user-friendly booking experience with detailed property listings, high-quality photos, verified reviews, and secure payment options. Users can filter searches by location, price, amenities, and property type, communicate with hosts through in-app messaging, and manage reservations seamlessly. The app also features Experiences—unique activities hosted by locals—to enhance travel adventures.\n\nAirbnb is praised for its diverse accommodation options, transparent review system, and the personal touch it brings to travel. The platform emphasizes trust and safety with verified listings, secure payments, and 24/7 customer support.\n\nWith an average rating of around 4.8 stars on major app stores, users appreciate Airbnb's reliability, variety, and the unique travel experiences it offers. The app has been downloaded over 500 million times worldwide, reflecting its global impact on how people travel.\n\nIn summary, Airbnb is a transformative travel platform that offers unique stays and local experiences, making travel more personal, affordable, and memorable.",
+    "size": 147,
+    "reviews": "623 K",
+    "ratingAvg": 4.8,
+    "downloads": "890 M",
+    "ratings": [
+      { "name": "1 star", "count": 93450 },
+      { "name": "2 star", "count": 124600 },
+      { "name": "3 star", "count": 373800 },
+      { "name": "4 star", "count": 1869000 },
+      { "name": "5 star", "count": 4162150 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9xtqBn2/f3bd0ca0be5452c19fa5360cd19835af.jpg",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 31,
+    "description": "Microsoft Teams, developed by Microsoft Corporation, is a comprehensive collaboration platform that combines workplace chat, video meetings, file storage, and application integration. Launched in 2017, Teams has become essential for remote work and hybrid teams, offering a centralized hub for communication and productivity within the Microsoft 365 ecosystem.\n\nThe official Teams app provides seamless video conferencing, instant messaging, channel-based organization, and real-time collaboration on documents. Users can schedule meetings, share screens, record sessions, and integrate with apps like SharePoint, OneNote, and Planner. The app supports large meetings, webinars, and breakout rooms for flexible collaboration.\n\nMicrosoft Teams is praised for its robust feature set, deep integration with Microsoft Office applications, and enterprise-grade security. It serves organizations of all sizes with tools for project management, file sharing, and team coordination.\n\nWith an average rating of around 4.5 stars on major app stores, users value Teams' comprehensive collaboration capabilities and reliability. Some mention a learning curve for new users, but regular updates enhance usability. The app has been downloaded over 500 million times, reflecting its widespread corporate adoption.\n\nIn summary, Microsoft Teams is a powerful collaboration platform that enables seamless communication and productivity for modern workplaces through integrated tools and unified workflows.",
+    "size": 136,
+    "reviews": "784 K",
+    "ratingAvg": 4.5,
+    "downloads": "920 M",
+    "ratings": [
+      { "name": "1 star", "count": 188160 },
+      { "name": "2 star", "count": 313600 },
+      { "name": "3 star", "count": 784000 },
+      { "name": "4 star", "count": 2352000 },
+      { "name": "5 star", "count": 4310240 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yFy8d5Vd/78fdebf2d08accd0e0b8d920250dd4f7.jpg",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "id": 32,
+    "description": "Slack, developed by Slack Technologies (a Salesforce company), is a leading business communication platform designed to streamline team collaboration through organized channels, direct messaging, and extensive integrations. Since its launch in 2013, Slack has revolutionized workplace communication by replacing email with real-time conversations and searchable message archives.\n\nThe official Slack app offers an intuitive interface for organizing conversations into channels by topic, project, or team. Users can send direct messages, share files, make voice and video calls, and integrate thousands of third-party apps and services. The app supports threaded conversations, custom notifications, and powerful search to keep teams connected and productive.\n\nSlack is praised for its flexibility, extensive integration ecosystem, and ability to reduce email clutter while improving team transparency. The platform serves companies of all sizes with customizable workflows and automation through Slack bots and apps.\n\nWith an average rating of around 4.6 stars on major app stores, users appreciate Slack's ease of use and collaborative features. Some note that active channels can become overwhelming, but customizable notifications help manage information flow. The app has been downloaded over 100 million times globally.\n\nIn summary, Slack is a dynamic communication platform that enhances team collaboration through organized, searchable conversations and seamless tool integration, making work more efficient and transparent.",
+    "size": 119,
+    "reviews": "567 K",
+    "ratingAvg": 4.6,
+    "downloads": "780 M",
+    "ratings": [
+      { "name": "1 star", "count": 136080 },
+      { "name": "2 star", "count": 204120 },
+      { "name": "3 star", "count": 680400 },
+      { "name": "4 star", "count": 2041200 },
+      { "name": "5 star", "count": 3742200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7t3Wn4cv/0cda5c838c53b308df23fa19ce34c5f9.jpg",
+    "title": "Tinder",
+    "companyName": "Match Group, Inc.",
+    "id": 33,
+    "description": "Tinder, developed by Match Group, Inc., is the world's most popular dating app that has revolutionized how people meet and connect romantically. Launched in 2012, Tinder pioneered the swipe-based matching system that has become synonymous with modern online dating, making it easy and fun to discover potential matches.\n\nThe official Tinder app offers a simple, addictive interface where users create profiles with photos and bios, then swipe right to like or left to pass on potential matches. When both users swipe right, it's a match, and they can start chatting. The app uses location-based technology to show nearby users and offers features like Super Likes, Boosts, and premium subscriptions (Tinder Plus, Gold, and Platinum) for enhanced visibility and additional features.\n\nTinder is praised for its user-friendly design, large user base spanning over 190 countries, and the efficiency of its matching algorithm. The platform has facilitated millions of connections, from casual dates to serious relationships and friendships.\n\nWith an average rating of around 4.1 stars on major app stores, users appreciate Tinder's ease of use and matching potential, though some express concerns about fake profiles and subscription costs. The app has been downloaded over 500 million times worldwide, making it the most recognized dating app globally.\n\nIn summary, Tinder is a groundbreaking dating platform that makes meeting new people simple, fun, and accessible through intuitive swiping and smart matching technology.",
+    "size": 95,
+    "reviews": "1.2 M",
+    "ratingAvg": 4.1,
+    "downloads": "850 M",
+    "ratings": [
+      { "name": "1 star", "count": 720000 },
+      { "name": "2 star", "count": 960000 },
+      { "name": "3 star", "count": 1800000 },
+      { "name": "4 star", "count": 3600000 },
+      { "name": "5 star", "count": 4920000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/67bwv2Wj/a935bcc2db4cc0f2416af599e17b38b8.jpg",
+    "title": "Venmo",
+    "companyName": "PayPal, Inc.",
+    "id": 34,
+    "description": "Venmo, owned by PayPal, Inc., is a popular mobile payment service that makes sending and receiving money between friends and family quick, easy, and social. Launched in 2009, Venmo has become especially popular among younger users for splitting bills, paying rent, and reimbursing friends with just a few taps.\n\nThe official Venmo app combines peer-to-peer payments with a social feed where users can share payment activities (with customizable privacy settings) accompanied by emojis and comments. Users can link bank accounts, debit cards, or credit cards to send money instantly or transfer funds to their bank. The app also offers a Venmo debit card and the ability to pay at participating merchants.\n\nVenmo is praised for its social, user-friendly approach to money transfers, making financial transactions feel more casual and less formal. The app's simplicity and instant transfer options have made it a staple for splitting restaurant bills, concert tickets, and other shared expenses.\n\nWith an average rating of around 4.7 stars on major app stores, users love Venmo's convenience and social features. Some mention occasional transfer delays to banks, but the service remains highly trusted. The app has been downloaded over 100 million times in the United States alone.\n\nIn summary, Venmo is a convenient and social payment app that simplifies money transfers between people while adding a fun, interactive element to everyday transactions.",
+    "size": 71,
+    "reviews": "456 K",
+    "ratingAvg": 4.7,
+    "downloads": "620 M",
+    "ratings": [
+      { "name": "1 star", "count": 68400 },
+      { "name": "2 star", "count": 91200 },
+      { "name": "3 star", "count": 273600 },
+      { "name": "4 star", "count": 1368000 },
+      { "name": "5 star", "count": 2786800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/0R6vDScN/b4e7dde02e437cc88dd43fdeedc84c3a.jpg",
+    "title": "Calm",
+    "companyName": "Calm.com, Inc.",
+    "id": 35,
+    "description": "Calm, developed by Calm.com, Inc., is a leading meditation and sleep app designed to help users reduce anxiety, sleep better, and live more mindfully. Since its launch in 2012, Calm has become one of the most popular wellness apps, offering guided meditations, sleep stories narrated by celebrities, breathing exercises, and relaxing music.\n\nThe official Calm app provides programs for stress reduction, improved focus, better sleep, and personal growth. Users can choose from meditation sessions ranging from 3 to 25 minutes, listen to sleep stories for adults and children, and explore masterclasses taught by mindfulness experts. The app features soothing nature sounds, stretching exercises, and daily calm sessions.\n\nCalm is praised for its high-quality content, calming interface, and diverse offerings that cater to both beginners and experienced meditators. Celebrity narrators like Matthew McConaughey and Harry Styles add unique appeal to the sleep story collection.\n\nWith an average rating of around 4.8 stars on major app stores, users credit Calm with improving their sleep quality and reducing stress levels. Some mention the subscription price, but most agree the benefits justify the cost. The app has been downloaded over 100 million times and was named Apple's App of the Year in 2017.\n\nIn summary, Calm is a comprehensive wellness app that supports mental health and better sleep through expertly crafted meditation, sleep stories, and mindfulness tools.",
+    "size": 102,
+    "reviews": "689 K",
+    "ratingAvg": 4.8,
+    "downloads": "580 M",
+    "ratings": [
+      { "name": "1 star", "count": 55120 },
+      { "name": "2 star", "count": 82680 },
+      { "name": "3 star", "count": 206700 },
+      { "name": "4 star", "count": 1033500 },
+      { "name": "5 star", "count": 2311000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/MX4c9XC/7ec499172b8308b6e7bc9d44895f9b7d.jpg",
+    "title": "Robinhood",
+    "companyName": "Robinhood Markets, Inc.",
+    "id": 36,
+    "description": "Robinhood, developed by Robinhood Markets, Inc., is a commission-free investment app that has democratized stock trading by making it accessible to everyone. Launched in 2013, Robinhood pioneered zero-commission trading for stocks, ETFs, options, and cryptocurrencies, disrupting traditional brokerage models and attracting millions of new investors.\n\nThe official Robinhood app offers a clean, intuitive interface for buying and selling investments with no minimum deposit required. Users can trade stocks, ETFs, options, and cryptocurrencies, set up recurring investments, and access real-time market data. The app features educational resources, news updates, and portfolio tracking to help users make informed decisions.\n\nRobinhood is praised for removing barriers to entry in investing, particularly for younger and first-time investors. The platform's simplicity and mobile-first design have made stock trading more accessible and less intimidating.\n\nWith an average rating of around 4.3 stars on major app stores, users appreciate Robinhood's ease of use and zero-commission model. Some have raised concerns about customer service and trading restrictions during high volatility, which the company has worked to address. The app has been downloaded over 50 million times.\n\nIn summary, Robinhood is an innovative investment platform that empowers individuals to participate in financial markets through commission-free trading and an accessible, user-friendly mobile experience.",
+    "size": 83,
+    "reviews": "534 K",
+    "ratingAvg": 4.3,
+    "downloads": "490 M",
+    "ratings": [
+      { "name": "1 star", "count": 160200 },
+      { "name": "2 star", "count": 267000 },
+      { "name": "3 star", "count": 801000 },
+      { "name": "4 star", "count": 1602000 },
+      { "name": "5 star", "count": 2349800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zVbwPrj8/c8e7770f57ca7fdb2b7fe0c298229baf.jpg",
+    "title": "Waze",
+    "companyName": "Google LLC",
+    "id": 37,
+    "description": "Waze, owned by Google LLC, is a community-driven GPS navigation app that provides real-time traffic information and routing suggestions. Launched in 2008, Waze leverages crowdsourced data from millions of users to alert drivers about accidents, road hazards, police presence, and traffic conditions, helping them find the fastest routes.\n\nThe official Waze app offers turn-by-turn navigation with voice guidance, automatic rerouting around traffic, and real-time updates on road conditions. Users can actively contribute by reporting incidents, which helps the entire community. The app integrates with music streaming services and supports carpooling features through Waze Carpool.\n\nWaze is praised for its accuracy in predicting traffic patterns, community-driven alerts, and ability to save time on commutes. The app's social features and gamification elements, like earning points for contributions, create an engaging user experience.\n\nWith an average rating of around 4.6 stars on major app stores, users value Waze's real-time accuracy and community contributions. Some mention battery drain during long trips, but the benefits often outweigh this concern. The app has been downloaded over 100 million times worldwide.\n\nIn summary, Waze is a dynamic navigation app that combines GPS functionality with community intelligence to help drivers avoid traffic and reach their destinations faster and more efficiently.",
+    "size": 96,
+    "reviews": "723 K",
+    "ratingAvg": 4.6,
+    "downloads": "840 M",
+    "ratings": [
+      { "name": "1 star", "count": 144600 },
+      { "name": "2 star", "count": 216900 },
+      { "name": "3 star", "count": 723000 },
+      { "name": "4 star", "count": 2169000 },
+      { "name": "5 star", "count": 3975500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HL5NFgry/2d19e7fd2c0a883cbebef31d6a21bd6c.jpg",
+    "title": "Grubhub",
+    "companyName": "Grubhub Inc.",
+    "id": 38,
+    "description": "Grubhub, developed by Grubhub Inc. (part of Just Eat Takeaway.com), is a leading food delivery and pickup service connecting diners with thousands of local restaurants. Founded in 2004, Grubhub has become a go-to platform for ordering meals from favorite restaurants or discovering new dining options with convenient delivery or pickup.\n\nThe official Grubhub app provides an easy-to-navigate interface with extensive restaurant menus, customer reviews, ratings, and real-time order tracking. Users can filter by cuisine type, delivery time, and special offers. The app supports scheduled orders, group ordering, and Grubhub+ membership for unlimited free delivery on eligible orders.\n\nGrubhub is praised for its wide restaurant selection, reliable delivery service, and user-friendly ordering experience. The platform frequently offers promotions and rewards to enhance value for customers.\n\nWith an average rating of around 4.4 stars on major app stores, users appreciate Grubhub's variety and convenience. Some mention occasional delivery delays during peak hours, but the service generally maintains strong customer satisfaction. The app has been downloaded over 50 million times.\n\nIn summary, Grubhub is a comprehensive food delivery platform that brings restaurant-quality meals to your door with ease, offering diverse culinary options and reliable service for every craving.",
+    "size": 108,
+    "reviews": "612 K",
+    "ratingAvg": 4.4,
+    "downloads": "570 M",
+    "ratings": [
+      { "name": "1 star", "count": 147840 },
+      { "name": "2 star", "count": 246400 },
+      { "name": "3 star", "count": 616000 },
+      { "name": "4 star", "count": 1848000 },
+      { "name": "5 star", "count": 3201760 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wrFKbNqZ/997b0a243df40b681d8c8177724f1b45.jpg",
+    "title": "Notion",
+    "companyName": "Notion Labs, Inc.",
+    "id": 39,
+    "description": "Notion, developed by Notion Labs, Inc., is an all-in-one workspace that combines notes, tasks, wikis, and databases into a single, flexible platform. Since its launch in 2016, Notion has gained a devoted following among individuals and teams seeking a customizable solution for project management, knowledge sharing, and personal organization.\n\nThe official Notion app offers a modular interface where users can create pages using various content blocks including text, to-do lists, tables, calendars, kanban boards, and embedded media. Users can build custom workflows, create interconnected databases, and collaborate with team members in real-time. The app supports templates for quick setup and integrates with popular tools.\n\nNotion is praised for its incredible flexibility, clean design, and ability to replace multiple productivity apps with one comprehensive solution. The platform serves students, professionals, and organizations with everything from simple note-taking to complex project management.\n\nWith an average rating of around 4.8 stars on major app stores, users love Notion's versatility and powerful features. Some mention a learning curve for advanced features, but extensive documentation and community resources help. The app has been downloaded over 50 million times globally.\n\nIn summary, Notion is a revolutionary productivity workspace that adapts to your needs, offering unlimited flexibility to organize work, collaborate with others, and build the perfect system for your goals.",
+    "size": 74,
+    "reviews": "498 K",
+    "ratingAvg": 4.8,
+    "downloads": "440 M",
+    "ratings": [
+      { "name": "1 star", "count": 39840 },
+      { "name": "2 star", "count": 59760 },
+      { "name": "3 star", "count": 149400 },
+      { "name": "4 star", "count": 747000 },
+      { "name": "5 star", "count": 1503000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/h18WQzt0/fdc8dea84ef2617ef65f6fd3130fc014.jpg",
+    "title": "Mint",
+    "companyName": "Intuit Inc.",
+    "id": 40,
+    "description": "Mint, developed by Intuit Inc., is a comprehensive personal finance app that helps users manage their money, track spending, create budgets, and monitor credit scores—all in one place. Launched in 2006 and acquired by Intuit in 2009, Mint has become one of the most trusted free financial management tools available.\n\nThe official Mint app provides automatic categorization of transactions by linking bank accounts, credit cards, loans, and investments. Users can set budget goals, receive bill payment reminders, track net worth over time, and get personalized financial insights and tips. The app offers free credit score monitoring and alerts for unusual account activity.\n\nMint is praised for its comprehensive financial overview, user-friendly dashboard, and the fact that it's completely free to use. The platform helps users identify spending patterns, reduce unnecessary expenses, and work toward financial goals.\n\nWith an average rating of around 4.6 stars on major app stores, users value Mint's automatic tracking and budgeting capabilities. Some mention occasional syncing issues with certain banks, but overall reliability remains strong. The app has been downloaded over 50 million times.\n\nIn summary, Mint is a powerful personal finance app that simplifies money management through automatic tracking, smart budgeting, and actionable insights to help users achieve financial wellness.",
+    "size": 82,
+    "reviews": "567 K",
+    "ratingAvg": 4.6,
+    "downloads": "510 M",
+    "ratings": [
+      { "name": "1 star", "count": 113400 },
+      { "name": "2 star", "count": 170100 },
+      { "name": "3 star", "count": 567000 },
+      { "name": "4 star", "count": 1701000 },
+      { "name": "5 star", "count": 3118500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sJdy21Ty/534cda0261745b1dcb49656b82eabd7a.jpg",
+    "title": "Hinge",
+    "companyName": "Match Group, Inc.",
+    "id": 41,
+    "description": "Hinge, part of Match Group, Inc., is a dating app designed to be deleted—focused on fostering meaningful connections that lead to real relationships. Launched in 2012 and relaunched in 2016 with a relationship-focused approach, Hinge distinguishes itself from swipe-based apps by emphasizing detailed profiles and conversation starters.\n\nThe official Hinge app requires users to build comprehensive profiles by answering prompts and sharing photos that showcase personality. Instead of endless swiping, users Like specific parts of profiles and can add comments to start conversations. The app uses a sophisticated algorithm that learns user preferences to suggest compatible matches.\n\nHinge is praised for its thoughtful approach to online dating, encouraging users to engage more deeply with profiles rather than making snap judgments. Features like video prompts, voice notes, and Video Chat help users connect authentically before meeting in person.\n\nWith an average rating of around 4.5 stars on major app stores, users appreciate Hinge's focus on quality over quantity and its success in facilitating serious relationships. The app has been downloaded over 50 million times and has a strong reputation among people seeking committed partnerships.\n\nIn summary, Hinge is a relationship-focused dating app that helps users find meaningful connections through detailed profiles, thoughtful conversation starters, and a commitment to quality matches over endless swiping.",
+    "size": 89,
+    "reviews": "423 K",
+    "ratingAvg": 4.5,
+    "downloads": "380 M",
+    "ratings": [
+      { "name": "1 star", "count": 101520 },
+      { "name": "2 star", "count": 169200 },
+      { "name": "3 star", "count": 423000 },
+      { "name": "4 star", "count": 1269000 },
+      { "name": "5 star", "count": 2329280 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/jtK4p6j/f8d5fcf6dcc5e94c421284748b5dfd3a.jpg",
+    "title": "Adobe Lightroom",
+    "companyName": "Adobe Inc.",
+    "id": 42,
+    "description": "Adobe Lightroom, developed by Adobe Inc., is a professional-grade photo editing and organization app trusted by photographers worldwide. Part of Adobe's Creative Cloud suite, Lightroom combines powerful editing tools with cloud storage and cross-device sync, making professional photo editing accessible on mobile devices.\n\nThe official Lightroom app offers comprehensive editing capabilities including exposure adjustment, color grading, selective editing, healing tools, and AI-powered enhancements. Users can organize photos with ratings, keywords, and albums, and sync their entire photo library across devices. The app supports RAW image editing and non-destructive workflows.\n\nLightroom is praised for its professional-quality results, intuitive interface, and seamless integration with Adobe's ecosystem. Preset sharing and community features inspire creativity and streamline editing workflows.\n\nWith an average rating of around 4.7 stars on major app stores, users love Lightroom's powerful yet accessible editing tools. The free version offers substantial functionality, while premium subscriptions unlock full features including cloud storage. The app has been downloaded over 100 million times globally.\n\nIn summary, Adobe Lightroom is a comprehensive photo editing app that brings professional-grade tools to mobile devices, enabling photographers to edit, organize, and share stunning images from anywhere.",
+    "size": 156,
+    "reviews": "634 K",
+    "ratingAvg": 4.7,
+    "downloads": "720 M",
+    "ratings": [
+      { "name": "1 star", "count": 95100 },
+      { "name": "2 star", "count": 126800 },
+      { "name": "3 star", "count": 380400 },
+      { "name": "4 star", "count": 1902000 },
+      { "name": "5 star", "count": 4235700 }
     ]
   }
 ]

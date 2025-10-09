@@ -51,7 +51,7 @@ const AppDetails = () => {
         <div className='card card-body' >
             <div className="card card-side bg-base-100 shadow-sm">
                 <figure className='h-84 overflow-hidden' >
-                    <img className='w-full object-cover'
+                    <img className=' rounded-full w-full object-cover'
                         src={image}
                         alt={title} />
                 </figure>

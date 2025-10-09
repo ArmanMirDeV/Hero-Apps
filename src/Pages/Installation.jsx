@@ -83,7 +83,7 @@ const {  loading } = useAppDetails();
                         {sortedItem.map((app, index) => (
                             <div
                                 key={index}
-                                className="flex items-center justify-between p-4 bg-gray-100 rounded-md shadow-sm"
+                                className=" md:flex  items-center justify-between p-4 bg-gray-100 rounded-md shadow-sm"
                             >
                                 {/* Left side - App Info */}
                                 <div className="flex items-center space-x-4">

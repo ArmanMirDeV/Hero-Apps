@@ -48,12 +48,12 @@ const Apps = () => {
                     </h2>
                 </div>
 
-                <div className='flex justify-between gap-72'>
+                <div className='flex justify-between'>
                     <p className='font-bold text-2xl p-2 mb-3'>
                         ({searchedApp.length}) Apps Found
                     </p>
 
-                    <label className="input">
+                    <label className="input ">
                         <input
                             value={search}
                             onChange={e => setSearch(e.target.value)}

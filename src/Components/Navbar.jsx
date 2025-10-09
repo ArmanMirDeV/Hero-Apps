@@ -40,7 +40,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <Link to='/' className=" flex"><span><img className='h-10 w-10' src={logo} alt="logo" /></span> <span className="text-4xl font-extrabold bg-gradient-to-r from-[#632ee3] via-purple-500 to-[#9f62f2] bg-clip-text text-transparent" >HERO.IO</span></Link>
+                <Link to='/' className=" flex"><span className='hidden md:block' ><img className='h-10 w-10' src={logo} alt="logo" /></span> <span className="text-4xl font-extrabold bg-gradient-to-r from-[#632ee3] via-purple-500 to-[#9f62f2] bg-clip-text text-transparent font-mono" >APPORA.IO</span></Link>
             </div>
             <div className="navbar-center ">
 
