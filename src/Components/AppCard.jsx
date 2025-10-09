@@ -4,7 +4,7 @@ import ratingIcon from '../assets/icon-ratings.png'
 const AppCard = ({appData}) => {
 
     
-    const {image, ratingAvg, downloads} = appData;
+    const {image, title, ratingAvg, downloads} = appData;
 
 
 
@@ -16,7 +16,7 @@ const AppCard = ({appData}) => {
                     alt="Album" />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">New album is released!</h2>
+                <h2 className="card-title text-2xl font-semibold text-blue-700 font-mono flex justify-center">{title}</h2>
                 <div className='flex justify-between items-center'>
 
                     <div className='flex text-xl gap-2 text-green-600 items-center font-semibold bg-[#f1f5e8] px-4 py-2 rounded-xl' >
