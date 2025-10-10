@@ -33,10 +33,10 @@ const AppDetails = () => {
     const handleInstallNow = () => {
         const existingApp = JSON.parse(localStorage.getItem('app')) || [];
 
-        
 
 
-        
+
+
 
         const updatedApp = [...existingApp, singleAppData];
         localStorage.setItem('app', JSON.stringify(updatedApp));
@@ -55,17 +55,38 @@ const AppDetails = () => {
                 <div className="card-body">
                     <h2 className="card-title font-bold text-3xl">{title}</h2>
                     <p className='text-xl font-mono' >Developed by <span className='text-purple-600'>{companyName}</span></p>
-                    <div className='flex gap-8'>
-                        <div>
-                            <img src={downloadIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Downloads</p> <p className='font-extrabold text-2xl' > {downloads} </p>
+                    <div className="flex flex-wrap gap-6 sm:gap-8 justify-center sm:justify-start">
+                        <div className="flex flex-col items-center sm:items-start bg-gray-200 shadow-2xl rounded-md p-4 w-full sm:w-auto">
+                            <img
+                                className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 mb-2"
+                                src={downloadIcon}
+                                alt="download icon"
+                            />
+                            <p className="text-xs text-gray-500">Downloads</p>
+                            <p className="font-extrabold text-2xl">{downloads}</p>
                         </div>
-                        <div>
-                            <img src={ratingIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Average Ratings</p> <p className='font-extrabold text-2xl' > {ratingAvg} </p>
+
+                        <div className="flex flex-col items-center sm:items-start bg-gray-200 shadow-2xl rounded-md p-4 w-full sm:w-auto">
+                            <img
+                                className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 mb-2"
+                                src={ratingIcon}
+                                alt="rating icon"
+                            />
+                            <p className="text-xs text-gray-500">Average Ratings</p>
+                            <p className="font-extrabold text-2xl">{ratingAvg}</p>
                         </div>
-                        <div>
-                            <img src={reviewIcon} alt="download icon" /> <p className='text-xs text-gray-500'>Total Reviews</p> <p className='font-extrabold text-2xl' > {reviews} </p>
+
+                        <div className="flex flex-col items-center sm:items-start bg-gray-200 shadow-2xl rounded-md p-4 w-full sm:w-auto">
+                            <img
+                                className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 mb-2"
+                                src={reviewIcon}
+                                alt="review icon"
+                            />
+                            <p className="text-xs text-gray-500">Total Reviews</p>
+                            <p className="font-extrabold text-2xl">{reviews}</p>
                         </div>
                     </div>
+
                     <div className="card-actions ">
                         <button
                             onClick={handleInstallNow}
@@ -88,9 +109,9 @@ const AppDetails = () => {
 
             <div className='space-y-3' >
                 <h3 className='text-xl font-semibold'>Apps Review Chart</h3>
-                <div className='bg-base-100 border rounded-xl p-4 h-80' >
+                <div className='bg-base-100 border rounded-xl p-4 h-80 ' >
                     <ResponsiveContainer width="100%" height="100%">
-                        <BarChart
+                        <BarChart 
                             width={500}
                             height={300}
                             data={singleAppData.ratings}
@@ -107,7 +128,7 @@ const AppDetails = () => {
                             <Tooltip />
                             <Legend />
                             <Bar dataKey="count" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
-                            <Bar dataKey="uv" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+
                         </BarChart>
                     </ResponsiveContainer>
 

@@ -17,7 +17,7 @@ const HeroSection = () => {
 
             {/* Subtext */}
             <p className="max-w-2xl mx-auto text-gray-600 mb-8">
-                At <span className="font-semibold text-gray-800">HERO.IO</span>, we craft innovative apps
+                At <span className="font-semibold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent font-mono text-xl">APPORA.IO</span>, we craft innovative apps
                 designed to make everyday life simpler, smarter, and more exciting.
                 Our goal is to turn your ideas into digital experiences that truly make an impact.
             </p>
